@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список рецептов</title>
+</head>
+<body>
+    <h1>Добро пожаловать!</h1>
+    <p>Выберите рецепт:</p>
+    <ul>
+        {% for recipe in recipes %}
+        <li><a href="{{ recipe }}/">{{ recipe }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
